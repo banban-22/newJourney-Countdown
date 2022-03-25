@@ -3,6 +3,9 @@
 :root {
   --main-font-family: 'poppins', sans-serif;
   --main-text-shadow: 0px 0px 20px rgb(250, 229, 250);
+  --main-border: 1px solid rgb(250, 229, 250);
+  --main-color: rgb(250, 229, 250);
+  --main-boxshadow: 0px 0px 6px #fff;
 }
 
 * {
@@ -19,7 +22,7 @@ body {
   align-items: center;
   font-family: var(--main-font-family);
   margin: 0;
-  color: rgb(250, 229, 250);
+  color: var(--main-color);
 }
 
 .time-setting {
@@ -57,8 +60,8 @@ ul {
   color: #000;
   padding: 7px;
   width: 12rem;
-  border: 1px solid rgb(250, 229, 250);
-  box-shadow: 0px 0px 6px #fff;
+  border: var(--main-border);
+  box-shadow: var(--main-boxshadow);
   filter: drop-shadow(0 0 10px #fff);
   -webkit-filter: drop-shadow(0 0 10px #fff);
   border-radius: 2px;
@@ -68,11 +71,13 @@ ul {
   padding: 10px;
   font-weight: bold;
   cursor: pointer;
-  border: 1px solid rgb(250, 229, 250);
-  background-color: rgb(250, 229, 250);
-  box-shadow: 0px 0px 6px #fff;
+  border: var(--main-border);
+  background-color: var(--main-color);
+  box-shadow: var(--main-boxshadow);
   filter: drop-shadow(0 0 10px #fff);
+  -webkit-filter: drop-shadow(0 0 10px #fff);
   border-radius: 2px;
+  color: #000;
 }
 
 .countdown-heading,
@@ -141,13 +146,14 @@ li span {
   height: 2.5rem;
   border-radius: 2rem;
   text-transform: uppercase;
-  border: 1px solid rgb(250, 229, 250);
-  background-color: rgb(250, 229, 250);
-  box-shadow: 0px 0px 6px #fff;
+  border: var(--main-border);
+  background-color: var(--main-color);
+  box-shadow: var(--main-boxshadow);
   cursor: pointer;
   outline: none;
   display: block;
   margin: 3rem auto 0 auto;
+  color: #000;
 }
 
 .complete-background {
