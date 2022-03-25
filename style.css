@@ -173,7 +173,6 @@ li span {
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 
 video {
@@ -220,10 +219,9 @@ video {
   }
 
   #countdown-container {
-    width: 100vw;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     object-fit: cover;
-    /* display: flex; */
     flex-direction: column;
     font-size: 0.5rem;
   }

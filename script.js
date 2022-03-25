@@ -31,7 +31,6 @@ const day = hour * 24;
 
 // Set Input (Today's Date) with min
 const currentDate = new Date().toISOString().slice(0, 10);
-console.log(currentDate);
 endTime.setAttribute('min', currentDate);
 // countdownValue = currentDate.getTime();
 
@@ -40,7 +39,6 @@ function countdown() {
   countdownActive = setInterval(() => {
     const now = new Date().getTime();
     const distance = countdownValue - now;
-    console.log(distance);
     const days = Math.floor(distance / day);
     const hours = Math.floor((distance % day) / hour);
     const minutes = Math.floor((distance % hour) / minute);
